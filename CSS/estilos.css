@@ -1,0 +1,122 @@
+/*Importa la fuente*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300;1,400;1,500&display=swap');
+
+/*Le pone un margin y padding de cero y un box-sizing tipo border-box a todo el documento*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Le pone el estilo de fuente "poppins" de color blanco al body*/
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: #f2f2f2;
+}
+/*A la etiqueta container se le pone una anchura del 90%, con un máximo de 1200px, un margin del 0 en automático y finalmente lleva un overflow con hidden*/
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+/*A la etiqueta nav se le pone un color de fondo de #143d64, una altura variable que se ajusta al navegador y con color blanco. */
+.nav{
+    background-color: #143d64;
+    height: var(--height-nav);
+    color: #fff;
+}
+/*A la etiqueta nav container se le pone una altura del 100%, un display de tipo flex, un justificado del contenido con espaciado entre las cosas y se alienan los items al centro.*/
+.nav_container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*A la etiqueta nav link, se le poneun color blanco, sin decoración al texto y con un margen a la izquierda de 1 em.*/
+.nav_link{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1em;
+}
+/*A la etiqueta hero main se le pone un display de tipo flex, con una altura que es adaptable a un cálculo que realiza el programa sobre el tamaño del navegador, con una alineación centrada para los items y con una altura mínima de 600 px.*/
+.hero_main{
+    display: flex;
+    height: calc(100vh-var(--height-nav));  
+    align-items: center;
+    min-height: 600px;
+}
+/*A la etiqueta hero img se le pone una anchura del 100%, con un máximo de 600 px, también se utiliza un display de tipo block y finalmente lleva un margin del cero en automático.*/
+.hero_img{
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+}
+/*A la etiqueta hero title se le pone un tamaño de fuente de 3rem.*/
+.hero_title{
+    font-size: 3rem;
+}
+/*A la etiqueta hero paragraph se le pone un tamaño de fuente de 1.5rem y un grosor de 300.*/
+.hero_paragraph{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+/*A la etiqueta cta se le aplica un color de fondo #6c63ff, un display de tipo inline-block, un padding de 15px y 30px, un margin-top de 1.5em, color blanco, ninguna decoración al texto y un borde con un radio de 6px.*/
+.cta{
+    background-color: #6c63ff;
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 1.5em;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+}
+/*Sirve para que la página web sea adaptable a otros dispositivos.*/
+@media screen and (max-width: 900px){
+    /*A la etiqueta root se le pone una altura de navegación de 900px.*/ 
+    :root{  
+    --height-nav:100px;  
+    }
+    /*A la etiqueta nav container se le aplica un flex direction de tipo column y una justificación de contenido de tipo space evenly.*/
+    .nav_container {  
+        flex-direction:column;  
+        justify-content:space-evenly;  
+    }
+    /*A la etiqueta hero main se le pone un flex direction de tipo column y un padding de 40px con 0.*/
+    .hero_main {  
+        flex-direction:column; 
+        padding: 40px 0;
+    }
+    /*A la etiqueta figure picture se le aplica un order de menos uno y una anchura máxima de 380px.*/
+    .figure_picture {  
+        order: -1;  
+        max-width: 380px; 
+    }
+    /*A la etiqueta hero texts se le aplica un display de tip flex, un flex-direction de tipo column, una alineación de los items de tipo flex-start y una justificación de contenido centrada.*/
+    .hero_texts{  
+        display: flex;  
+        flex-direction: column;  
+        align-items: flex-start;  
+        justify-content: center;  
+    }
+    /*A la etiqueta hero title se le aplica un tamaño de fuente de 2.5rem.*/
+    .hero_title{  
+        font-size: 2.5rem; 
+    }
+    /*A la etiqueta hero-paragraph se le aplica un tamaño de fuente de un rem.*/
+    .hero_paragraph{  
+        font-size: 1rem; 
+    }
+    /*A la etiqueta cta se le aplica un margin automático.*/
+    .cta{  
+        margin: auto;  
+        }  
+       } 
+       
+
+       
+       
+       
+
+        
+        
